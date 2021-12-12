@@ -1,38 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-	<link rel="stylesheet" type="text/css" href="join.css">
+<title>join us . Woman shield</title>
+<link rel="stylesheet" href="join.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link role="stylesheet" href="https://fonts.googleasis.com/icon?family=Material+Icons">
 </head>
-  	  <body>
-			<h1 class="head">SE Lab</h1>
-			<h2 class="head1">Form</h2>
-				<form action="action_page.php" method="POST">
-				<div class="header3">
-			   name <input type="text"  name="Username" required><br>
-			   father,s name <input type="text"  name="father's name" required><br>
-			    phone number<input type="pohen number" name="number" required><br>
-			    Email-id<input type="Email id"  name="email" required><br>
-			    Address<input type="adress"  name="address" required><br>
-			    Date of birth <input type="date"  required><br>
-			    Pincode<input type="number" required><br>
-			    Gender<input type="radio">Male<input type="radio">Female<input type="radio">Other
-			     <br>
-			     Proffession<input type="radio">Admisnistrative<input type="radio">Health care<input type="radio">Student<input type="radio">Social worker<input type="radio">Other<br>
-			    Education<select >
-				<option>Education</option>
-				<option>Btech</option>
-				<option>12th</option>
-				<option>10th</option>
-			</select><br>
-			     Password<input type="password"  name="password" required ><br>
-			    <a href="index.html"><button type="submit" class="btn">Submit</button></a>
-			    </div>
-			</section>
-    
-             	</form>
-   	 </body>
-    </html>
+
+<body>
+       
+    <section id="nav">
+    </section>
+	<section id="body" class="header1">
+		<div class="header2">
+            <h1>Lets Stey Connected</h1>
+			<h2>Join us</h2>
+            </div>
+            <form action="action_page.php" method="POST">
+            <div class="header3">
+		<input type="text" placeholder="Enter your name" name="Username" required><br>
+		<input type="text" placeholder="Enter Father's name" name="father's name" required><br>
+		<input type="pohen number" placeholder="Enter Phone number" name="number" required><br>
+		<input type="Email id" placeholder="Enter your email id" name="email" required><br>
+        <input type="adress" placeholder="Enter your adress" name="address" required><br>
+         <input type="age" placeholder="Enter your age" name="age" required><br>
+        <select name="Gender" id="Gender" class="input" required>
+                <option value="" class="option">Gender</option>
+                <option value="A" class="option">male</option>
+                <option value="B" class="option">female</option>
+                <option value="C" class="option">other</option>
+                </select><br>
+                <select name="Profession" class="Profession" required>
+                <option value="">Profession</option>
+                <option value="A" class="option">Admisnistrative</option>
+                <option value="B" class="option" >Health care</option>
+                <option value="C" class="option">Student</option>
+                <option value="D" class="option">Social worker</option>
+                <option value="E" class="option">Other</option>
+                </select><br>
+        <input type="password" placeholder="Enter password" name="password" required style="border: white; border-bottom: 2px solid rgb(138, 197, 28);
+    border-right: 1.5px solid blue;"><br>
+		<a href="index.html"><button type="submit" class="btn">join</button></a>
+		</div>
+	</section>
+
+
+     <section class="link">
+        <a href="index.html"><li><i class="fa fa-home" style="margin-right: 5px;"></i>Home</li></a>
+        <a href="About%20us.html"><li><i class="fa fa-about us" style="margin-right: 5px;"></i>About us</li></a>
+        <a href="contact us.html"><li><i class="fa fa-phone" style="margin-right: 5px;" ></i>Contact us</li></a>
+        <a href="login.html"><li><i class="material-icons" style="margin-right: 5px;"></i>login</li></a>
+        
+    </section>
+
+</form>
+</body>
+</html>
