@@ -1,0 +1,231 @@
+/* ########### Basic Configurations(CSS Resets) ########### */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css");
+
+:root {
+  font-family: 'Poppins', sans-serif;
+  font-size: 62.5%;
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+}
+
+*, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 0.15rem;
+  word-spacing: 0.15rem;
+  line-height: 2rem; }
+
+/* ########### Utility Classes ########### */
+.margin-setter{
+  width: 80vw;
+  transform: translate(12.5%);
+}
+button{
+  border: none;
+}
+
+/* -------------Navigation Bar-------------- */
+nav{
+  position: fixed;
+  height: 5.4rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  z-index: 1;
+  -webkit-transition:.5s;
+  -moz-transition:.5s;
+  transition:.5s;
+}
+.nav-checkbox{
+  display: none;
+  z-index: 2;
+  position: absolute;
+  transform: scale(2.6);
+  top: 2rem;
+  right: 1.9rem;
+  opacity: 0;
+}
+nav.active{
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+}
+.nav-div{
+  display: flex;
+}
+.nav-li-box{
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+.nav-div ul li{
+  display: inline-block;
+  margin-left: 2rem;
+}
+.nav-div ul li a{
+  text-decoration: none;
+  color: azure;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  transition: all 0.1s ease-in-out;
+}
+
+.nav-div ul li:hover{
+    color:lightyellow;
+    background: rgba(128, 128, 128, 0.2);
+    padding: 1rem 1.6rem;
+    border-top: .4rem solid #07bec2;
+}
+#nav-icon{
+  display: none;
+  color: snow;
+  margin-top: .15rem;
+}
+.nav-div input[type='checkbox']:checked~ .nav-li-box{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 5.4rem;
+  background: rgba(0, 0, 0, 0.9);
+  width: 86vw;
+  height: 50vmax;
+  justify-content: space-evenly;
+  padding: .5em;
+  animation: nav-animation forwards 0.5s ease-in-out 1;
+}
+.nav-img{
+  transform: scale(1.5);
+}
+
+@keyframes nav-animation{
+    from{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+}
+/* -------------Home Header-------------- */
+.home-header {
+  height: 100vh;
+}
+
+.home-header-bg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  width: auto;
+  height: auto;
+  z-index: -1; }
+
+@media (min-aspect-ratio: 16 / 9) {
+  .home-header-bg {
+    width: 100vw;
+    height: auto;} 
+  }
+@media (max-aspect-ratio: 16 / 9) {
+  .home-header-bg {
+    width: auto;
+    height: 100vh; } 
+  }
+
+/* -------------Home Header Insights-------------- */
+.home-header-div{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home-header-main-h{
+  font-size: 6REM;
+  font-weight: lighter;
+  color: aliceblue;
+  text-transform: uppercase;
+  word-spacing: 0.1em;
+  text-align: center;
+  line-height: 1.2em;
+}
+.home-header-sub-h{
+  font-size: 2REM;
+  color: lightgray;
+  text-transform: capitalize;
+  font-weight: lighter;
+  letter-spacing: 0.3em;
+  word-spacing: 0.05em;
+  line-height: 2em;
+  text-align: center;
+}
+
+
+/* Style buttons */
+.home-header-btn {
+  background-color: #03e5b7;
+  background-image: linear-gradient(315deg, #03e5b7 0%, #037ade 74%);
+  color: aliceblue;
+  cursor: pointer;
+  font-size: 1.6rem;
+  padding: 1.35rem 1.8rem;
+}
+
+.home-header-btn:hover {
+  background-color: #045de9;
+  background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+  padding: 1.35rem 1.8rem;
+}
+
+@media all and (max-width:720px) {
+  /* Genral */
+  .margin-setter {
+    width: 86vw;
+    transform: translate(7%);
+  }
+  /* Navigation Bar */
+  nav{
+    padding: 1rem;
+  }
+  #nav-icon{
+    display: block;
+  }
+  .nav-div ul{
+    display: none;
+  }
+  .nav-checkbox{
+    display: block;
+  }
+  .nav-div ul li a{
+    font-size: 2.4rem;
+  }
+  .nav-div ul li{
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .nav-div ul li:hover{
+    padding: 1.6rem;
+    border-top: none;
+  }
+  /* ================== Home Page ================== */
+  .home-header-div{
+    padding: 18vmin 10vmin 10vmin 10vmin;
+  }
+  .home-header-main-h{
+    font-size: 3.2REM;
+  }
+  .home-header-sub-h{
+    font-size: 1.6rem;
+  }
+  .home-header-btn{
+    padding: 0.9rem 1.35rem;
+  }
+}

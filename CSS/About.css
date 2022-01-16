@@ -1,0 +1,178 @@
+/* ------------- About Page Header --------------- */
+/* ------------- About Page Header --------------- */
+/* ------------- About Page Header --------------- */
+/* ------------- About Page Header --------------- */
+.abt-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 100vh;
+}
+.about-head-div{
+  margin: 20vmin 0 10vmin 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: azure;
+  text-align: center;
+}
+.about-logo{
+  width: 14rem;
+  animation: logo-rotation 92s 3s infinite;
+}
+@keyframes logo-rotation{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+.about-logo:hover{
+  animation-play-state: paused;
+}
+
+.about-header-section{
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  color: #999;
+}
+
+/* ------------- About Sections --------------- */
+/* ------------- About Sections --------------- */
+.abt-a {
+  text-decoration: none;
+  margin: 1rem 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: .1rem;
+}
+
+.abt-subsection-p {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+
+.abt-section {
+  max-width: 90rem;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3rem;
+}
+
+.abt-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #333;
+  font-size: 2rem;
+  margin: 1.3rem 0;
+}
+
+.section-lead {
+  max-width: 80rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  letter-spacing: .1.8em;
+  line-height: 1.6em;
+  margin: 1rem auto 1.5rem;
+  text-transform: uppercase;
+  color: #434343a4;
+}
+
+.service a {
+  color: #5b7abb;
+  display: block;
+}
+
+.service h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #56ceba;
+  font-size: 1.6rem;
+  margin: 1rem 0 0.6rem;
+}
+
+.services-grid {
+  display: flex;
+  align-items: center;
+}
+
+.service {
+  background: #fff;
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: .4rem;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  border: .4rem solid #e7e7e7;
+  transition: all 0.3s ease;
+}
+
+.service:hover {
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.08);
+}
+
+.service i {
+  font-size: 3.45rem;
+  margin: 1rem 0;
+}
+
+.service1 i,
+.service1 h4 {
+  color: #42b7ca;
+}
+
+.service1:hover {
+  border: .3rem solid #42b7ca;
+}
+
+.service2 i,
+.service2 h4{
+  color: #425fca;
+}
+
+.service2:hover {
+  border: .3rem solid #425fca;
+}
+
+.service3 i,
+.service3 h4{
+  color: #9c42ca;
+}
+
+.service3:hover {
+  border: .3rem solid #9c42ca;
+}
+
+.service > * {
+  flex: 1 1 100%;
+}
+
+@media all and (max-width:720px) {
+  /* ================== About Page ================== */
+  .about-header-bg{
+    height: auto;
+    bottom: auto;
+    transform: scaleY(-1000);
+    transform: translateY(-10%);
+  }
+  .abt-header{
+      max-height: 100%;
+  }
+  .abt-section {
+      max-width: 96rem;
+      padding: 0rem;
+  }
+  .services-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-head-div{
+    margin: 40vmin 10vmin 10vmin 10vmin;
+  }
+}
